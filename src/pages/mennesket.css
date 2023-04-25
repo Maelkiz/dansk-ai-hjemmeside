@@ -1,0 +1,29 @@
+.root {
+    overflow: hidden;
+}
+
+.navbar {
+    border-color: var(--utopian-earth-green);
+}
+
+.navbar a:after { 
+    background-color: var(--utopian-earth-light-green);
+}
+
+.active {
+    background-color: var(--utopian-earth-green);
+}
+
+h1 {
+    padding: 1rem;
+    background-color: transparent;
+    color: white;
+    font-size: xxx-large;
+    overflow: hidden;
+}
+
+iframe {
+    margin: auto;
+    width: 70%;
+    aspect-ratio: 16 / 9;
+}
