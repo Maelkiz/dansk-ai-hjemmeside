@@ -4,7 +4,7 @@
 	--dystopian-earth-blue: #5b5aa6;
 	--dystopian-earth-purple: #9e1df1;
 	--dystopian-earth-pink: #f169e1;
-	--dystopian-font: 'Roboto';
+	--dystopian-font: 'adobe-handwriting-ernie', sans-serif;
 
 	--utopian-earth-base: #c3c37b;
 	--utopian-earth-blue: #3491c8;
@@ -25,6 +25,8 @@
 * {
 	display: block;
 	font-family: 'Open Sans', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+	margin: 0;
+	padding: 0;
 }
 
 title {
@@ -32,8 +34,6 @@ title {
 }
 
 body {
-	margin: 0;
-	padding: 0;
 	background-color: black;
 }
 
