@@ -16,3 +16,11 @@
 	height: 25px;
 	z-index: -1;
 }
+
+.binary {
+	position: absolute;
+	color: #b621ca;
+	font-family: monospace;
+	font-size: 20px;
+	opacity: 0;
+}
