@@ -3,6 +3,9 @@
 	text-align: center;
 	width: 100%;
 	transition: scale 0.25s ease;
+	margin-block: 2rem;
+	font-size:3rem;
+	background-color: black;
 }
 
 .header:hover {
@@ -28,12 +31,13 @@
 
 .snake {
 	width: 100%;
+	transition: cubic-bezier(0.075, 0.82, 0.165, 1) filter 0.25s ease;
 }
 
 .snake:before,
 .snake:after,
 .snake-body {
-	background-image: url('/assets/snakeskin.png');
+	background-image: url('/assets/images/snakeskin.png');
 	background-size: 100px 100px;
 }
 
@@ -177,6 +181,9 @@
 	opacity: 1;
 }
 
-.snake:hover {
-	filter: hue-rotate(40deg);
+.videoRoot {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-block: 2rem;
 }

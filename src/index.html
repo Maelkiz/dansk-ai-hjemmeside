@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Den nye hud er stål</title>
 	<meta charset="UTF-8">
@@ -20,66 +21,73 @@
 	<script src="/assets/scripts/global.js" defer></script>
 	<script src="/assets/scripts/appearOnScroll.js" defer></script>
 	<!-- Local files -->
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="index.css">
 </head>
 
 <div class="root">
-	<nav class="navbar">
-		<a href="/index.html">Home</a>
-		<a href="/pages/mennesket.html">Mennesket</a>
-		<a href="/pages/ai.html">Artificiel Intelligens</a>
-		<a href="/pages/biografi.html">Biografi</a>
-	</nav>
-	<h1 class="header">
-		Den nye hud er stål
-	</h1>
-	<audio src="/assets/sounds/main.mp3" autoplay loop>
-		<p>If you are reading this, it is because your browser does not support the audio element.</p>
-	</audio>
-	<a class="snake" href="pages/mennesket.html">
-		<div class="snake-body">
-			<h3 class="snake-text">
-				I en fremtid, ikke så fjern som vi tror, møder det sidste menneske de nye, kunstige liv. Mennesket står
-				på stranden, mærker vinden I sit hår. Mærker solen mod sin hud. Mærker en sidste tåre fylde sine øjne,
-				før de lukkes.
-			</h3>
+
+	<body>
+		<nav class="navbar">
+			<a href="/index.html">Home</a>
+			<a href="/pages/mennesket.html">Mennesket</a>
+			<a href="/pages/ai.html">Artificiel Intelligens</a>
+			<a href="/pages/biografi.html">Biografi</a>
+		</nav>
+		<h1 class="header">
+			Den nye hud er stål
+		</h1>
+		<a class="snake" href="pages/mennesket.html">
+			<div class="snake-body">
+				<h3 class="snake-text">
+					I en fremtid, ikke så fjern som vi tror, møder det sidste menneske de nye, kunstige liv. Mennesket
+					står
+					på stranden, mærker vinden I sit hår. Mærker solen mod sin hud. Mærker en sidste tåre fylde sine
+					øjne,
+					før de lukkes.
+				</h3>
+			</div>
+		</a>
+		<div class="videoRoot">
+			<video width=1000 controls autoplay>
+				<source src="/assets/videos/mennesket.mp4">
+			</video>
 		</div>
-	</a>
-	<div>
-		<video width=1000 autoplay muted>
-			<source src="">
-		</video>
-	</div>
-	<a class="snake" href="pages/ai.html">
-		<div class="snake-body">
-			<h3 class="snake-text">
-				De nye liv er uendelige algoritmer. De nye liv behøver ikke mennesker mere. De nye liv vokser ud af
-				vores, og forkaster os som slange forkaster sin ham. De nye liv har øjne uden låg og en ny hud af stål.
-			</h3>
+		<a class="snake" href="pages/ai.html">
+			<div class="snake-body">
+				<h3 class="snake-text">
+					De nye liv er uendelige algoritmer. De nye liv behøver ikke mennesker mere. De nye liv vokser ud af
+					vores, og forkaster os som slange forkaster sin ham. De nye liv har øjne uden låg og en ny hud af
+					stål.
+				</h3>
+			</div>
+		</a>
+		<div class="videoRoot">
+			<video width=1000 controls autoplay>
+				<source src="/assets/videos/ai.mp4">
+			</video>
 		</div>
-	</a>
-	<div>
-		<video width=1000 autoplay muted>
-			<source src="">
-		</video>
-	</div>
-	<a class="snake" href="pages/biografi.html">
-		<div class="snake-body">
-			<h3 class="snake-text">
-				Et sted på bunden af koden, dybt nede i et potentielt univers, vågner en ny bevidsthed. Gennem sanser af
-				data, forsøger hud.7 at forstå det liv, den pludselig er dømt til.
-			</h3>
+		<a class="snake" href="pages/biografi.html">
+			<div class="snake-body">
+				<h3 class="snake-text">
+					Et sted på bunden af koden, dybt nede i et potentielt univers, vågner en ny bevidsthed. Gennem
+					sanser af
+					data, forsøger hud.7 at forstå det liv, den pludselig er dømt til.
+				</h3>
+			</div>
+		</a>
+		<div class="videoRoot">
+			<video width=1000 controls autoplays>
+				<source src="/assets/videos/biografi.mp4">
+			</video>
 		</div>
-	</a>
-	<div>
-		<video width=1000 autoplay muted>
-			<source src="">
-		</video>
-	</div>
+	</body>
+
+	<footer>
+		<audio src="/assets/sounds/biografi.mp3" autoplay loop>
+			<p>If you are reading this, it is because your browser does not support the audio element.</p>
+		</audio>
+		<a>Soundtrack composed by AIVA (Artificial Intelligence Virtual Artist): https://www.aiva.ai/</a>
+	</footer>
 </div>
-<footer>
-	<a>Soundtrack composed by AIVA (Artificial Intelligence Virtual Artist): https://www.aiva.ai/</a>
-</footer>
-</body>
 
 </html>
