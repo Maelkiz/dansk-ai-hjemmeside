@@ -15,12 +15,12 @@
 .snake:before,
 .snake:after,
 .snake-body {
-	background: url('https://images.unsplash.com/photo-1511762730500-cdeddc55ef89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c25ha2UlMjBza2lufGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+	background-image: url('/assets/snakeskin.png');
+	background-size: 100px 100px;
 }
 
 .snake:before,
 .snake:after {
-	margin: 1px;
 	content: '';
 	display: block;
 	color: white;
@@ -144,20 +144,15 @@
 	);
 }
 
-.snake-body {
-	margin-top: -1px;
-	margin-bottom: -1px;
-}
-
 .snake:hover {
-  filter: hue-rotate(40deg);
+  filter: hue-rotate(20deg);
 }
 
 .snake-text {
 	text-align: center;
 	color: white;
-	padding-top: 1rem;
-	padding-bottom: 2rem;
+	height: 100px;
 	max-width: 75rem;
 	margin: 0 auto;
+	padding-inline: 1rem;
 }
