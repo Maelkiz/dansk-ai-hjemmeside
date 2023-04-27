@@ -160,4 +160,11 @@
 	padding-bottom: 2rem;
 	max-width: 75rem;
 	margin: 0 auto;
+	opacity: 0;
+	transition: opacity 150ms ease-in;
+
+}
+
+.snake-text.appear{
+	opacity: 1;
 }
