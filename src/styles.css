@@ -9,13 +9,12 @@
 	scale: 1.1;
 }
 
-.cursor {
-	border: 1px solid black;
+.binary {
 	position: absolute;
-	border-radius: 100%;
-	width: 25px;
-	height: 25px;
-	z-index: -1;
+	color: #2146ca;
+	font-family: monospace;
+	font-size: 20px;
+	opacity: 0;
 }
 
 .snake {
