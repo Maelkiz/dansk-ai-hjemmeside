@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-	<!-- Don't touch stuff inside head -->
 	<head>
 		<title>Den nye hud er stål</title>
 		<meta charset="UTF-8">
@@ -19,8 +18,14 @@
 		<script src="/assets/global.js" defer></script>
 		<!-- Local files -->
 		<link rel="stylesheet" href="styles.css">
+
+		<!-- Lyd til knapper -->
+    <audio id="knapLyd" src="/src/Sounds/ClickSoundThing.wav"></audio>
 	</head>
 	<body>
+		<!-- Tilføj dette til knapperne for at få lyden til at fungere -->
+		<!-- <button onclick="document.getElementById('knapLyd').play()">Tryk her din knold</button> -->
+
 		<div class="root">
 			<nav class="navbar">
 				<a href="/index.html">Home</a>
@@ -29,7 +34,20 @@
 				<a href="/pages/biografi.html">Biografi</a>
 			</nav>
 			<h1 class="header">Den nye hud er stål</h1>
-			<a class="snake" href="pages/mennesket.html">
+		</div>
+    	<audio src="assets/main.mp3" autoplay loop>
+			  <p>If you are reading this, it is because your browser does not support the audio element.</p>
+		  </audio>
+			<center>
+        <video width=1000 autoplay muted>
+          <source src="\assets\You_have_been_found_guilty.mp4">
+        </video>
+      </center>
+		<div class="BGcolor"></div>
+		<center>
+            <img width=400 src="\assets\stiller mine træsko.png">
+        </center>
+            <a class="snake" href="pages/mennesket.html">
 				<div class="snake-body">
 					<h3 class="snake-text">
 						I en fremtid, ikke så fjern som vi tror, møder det sidste menneske de nye, kunstige liv. Mennesket står på stranden, mærker vinden I sit hår. Mærker solen mod sin hud. Mærker en sidste tåre fylde sine øjne, før de lukkes.
@@ -51,5 +69,8 @@
 				</div>
 			</a>
 		</div>
+		<footer class="bund">
+			<a>Soundtrack composed by AIVA (Artificial Intelligence Virtual Artist): https://www.aiva.ai/</a>
+		</footer>
 	</body>
 </html>
