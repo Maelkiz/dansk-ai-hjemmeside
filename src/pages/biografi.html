@@ -27,6 +27,56 @@
 			</nav>
 			<h1 class="header">Den nye hud er stål</h1>
 		</div>
+
 		<div class="cursor"></div>
+		<head>
+			<title>Image Slider</title>
+			<link rel="stylesheet" href="biografi.css">
+		</head>
+		<body>
+			<h1>Image Slider</h1>
+			<div class="slider">
+				<img src="img/pic0.jpg" alt="Image 1">
+				<img src="img/pic1.jpg" alt="Image 2">
+				<img src="img/pic2.jpg" alt="Image 3">
+				<img src="img/pic3.jpg" alt="Image 4">
+				<img src="img/pic4.jpg" alt="Image 5">
+				<img src="img/pic5.jpg" alt="Image 6">
+				<img src="img/pic6.jpg" alt="Image 7">
+				<img src="img/pic7.jpg" alt="Image 8">
+				<img src="img/pic8.jpg" alt="Image 9">
+				
+				
+				<button class="prev" onclick="prevSlide()">&#10094;</button>
+				<button class="next" onclick="nextSlide()">&#10095;</button>
+			</div>
+		
+			<script>
+				var slideIndex = 1;
+				showSlide(slideIndex);
+		
+				function prevSlide() {
+					showSlide(slideIndex -= 1);
+				}
+		
+				function nextSlide() {
+					showSlide(slideIndex += 1);
+				}
+		
+				function showSlide(n) {
+					var slides = document.querySelectorAll(".slider img");
+					var prevButton = document.querySelector(".slider button.prev");
+					var nextButton = document.querySelector(".slider button.next");
+					if (n > slides.length) {
+						slideIndex = 1;
+					} else if (n < 1) {
+						slideIndex = slides.length;
+					}
+					slides.forEach(function(slide) {
+						slide.style.opacity = "0";
+					});
+					slides[slideIndex - 1].style.opacity = "1";
+				}
+			</script>
 	</body>
 </html>
