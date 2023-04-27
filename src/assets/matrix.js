@@ -46,8 +46,8 @@ function animateBinary() {
     binaryElement.style.opacity = 0;
     setTimeout(() => {
       document.body.removeChild(binaryElement);
-    }, 5000); // Change this value to control how long the string stays visible after fading starts.
-  }, 10000); // Change this value to control how long the string stays on the screen before fading.
+    }, 2500); // Change this value to control how long the string stays visible after fading starts.
+  }, 5000); // Change this value to control how long the string stays on the screen before fading.
 }
 
 setInterval(animateBinary, 1500);
